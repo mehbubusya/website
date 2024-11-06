@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turkey</title>
+    <link rel="stylesheet" href="styles.css" />
+    
+  </head>
+  <body>
+
+  <header class="header">
+    <h1>Turkey: Land of Diversity</h1>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="https://ru.wikipedia.org/wiki/Турция">Wikipedia</a>
+      <a href="#places">Places</a>
+      <a href="#attractions">Attractions</a>
+      <a href="#passport">Passport</a>
+      <a href="#feedback">Feedback</a>
+      <a href="#information">Information</a>
+      <a href="#task">Task</a>
+      <a href="https://t.me/mmehbube" target="_blank">Сontact me</a>
+       </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Home<h1>
+
+        <div class="home-img">
+      <img src="/Users/mehbube/Downloads/HTML_CSS_WEBSITE/turkeyimage.jpg" alt="Landscape" title="The Mosque">
+    </div>
+
+      <p>I decided to create a website about Turkey to share my knowledge and experiences of the country's rich cultural heritage. Turkey attracts countless travelers, and I hope my site will help them understand its traditions, attractions, and cuisine better. </p>
+
+  </section>
+
+  <section class="about" id="about">
+
+    <div class="small-img">
+      <h2>About</h2>
+      <a href="/Users/mehbube/Downloads/HTML_CSS_WEBSITE/aboutimage.jpg" target="_blank">
+        <img src="/Users/mehbube/Downloads/HTML_CSS_WEBSITE/aboutimage.jpg" alt="" class="">
+    </a>
+    </div>
+
+    <div class="about-content">
+  
+      <p>Turkey is a country that uniquely bridges Europe and Asia, rich in history, stunning landscapes, and diverse cultures. Its unique blend of ancient civilizations, vibrant traditions, and delicious cuisine, along with breathtaking sites like Cappadocia and the Hagia Sophia, make it an exceptional travel destination.</p>
+    
+      </div>
+  </section>
+
+  <section class="places" id="places">
+   <h2>The most popular places in cities of Turkey<h2>
+    <ol>
+        <li>in Istanbul
+            <ul>
+                <li>Hagia Sophia (Ayasofya)</li>
+                <li>Blue Mosque (Sultan Ahmed Mosque)</li>
+                <li>Taksim Square and Istiklal Avenue</li>
+            </ul>
+        </li>
+        <li>in Cappadocia
+            <ul>
+                <li>Hot Air Balloon Rides</li>
+                <li>Ihlara Valley</li>
+                <li>Cavusin Village</li>
+            </ul>
+        </li>
+        <li>in Antalya
+            <ul>
+                <li>Antalya Museum</li>
+                <li>Old Town (Kaleiçi)</li>
+                <li>Kursunlu Waterfall</li>
+            </ul>
+        </li>
+    </ol>
+</section>
+
+<section class="passport" id="passport"> 
+  <div class="passportu">
+    <h1>Passport</h1>
+  </div>
+<main>
+  <div class="passport-container">
+      <img src="/Users/mehbube/Downloads/HTML_CSS_WEBSITE/passport.JPG" alt="Паспорт РФ">
+
+      <img id="photo" src="/Users/mehbube/Downloads/HTML_CSS_WEBSITE/mehbube.jpg" alt="Mehbube's photo" title="This is a photo of Mehbube">
+
+      <div class="text" id="issued">ГУ МВД ПО Г. МОСКВЕ</div>
+      <div class="text" id="surname">Мамедова</div>
+      <div class="text" id="name">Мехбубе</div>
+      <div class="text" id="father">Асифовна</div>
+      <div class="text" id="gender">Жен</div>
+      <div class="text" id="birthplace">Москва</div>
+  </div>
+
+  <div class="button-container">
+      <button id="translateButton">Поменять</button>
+  </div>
+</main>
+
+<script>
+  document.getElementById('translateButton').addEventListener('click', function() {
+      const issuedText = document.getElementById('issued');
+      const surnameText = document.getElementById('surname');
+      const nameText = document.getElementById('name');
+      const patronymicText = document.getElementById('father');
+      const genderText = document.getElementById('gender');
+      const birthplaceText = document.getElementById('birthplace');
+
+      if (issuedText.innerText === 'ГУ МВД ПО Г. МОСКВЕ') {
+          issuedText.innerText = 'MOSCOW GU MVD';
+          surnameText.innerText = 'Mamedova';
+          nameText.innerText = 'Mehbube';
+          patronymicText.innerText = 'Asifovna';
+          genderText.innerText = 'Female';
+          birthplaceText.innerText = 'Moscow';
+      } else {
+          issuedText.innerText = 'ГУ МВД ПО Г. МОСКВЕ';
+          surnameText.innerText = 'Мамедова';
+          nameText.innerText = 'Мехбубе';
+          patronymicText.innerText = 'Асифовна';
+          genderText.innerText = 'Жен';
+          birthplaceText.innerText = 'Москва';
+      }
+  });
+</script>
+</section>
+
+
+<section class="feedback" id="feedback">
+  <h2>The form to contact me</h2>
+
+<form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+    <p>Фамилия: <input type="Text" name="last_name" size=20  value="Иванова"></p>
+    <p>Имя: <input type="Text" name="name" size=20  value="Мария"></p>
+    <p>Возраст: <input type="Number" name="age" size=20 value="18"></p>
+    <p>Город, который Вы рассматриваете:
+        <input type="Radio" name="place" value="Moscow">Анкара
+        <input type="Radio" name="place" value="Moscow" checked>Измир
+        <input type="Radio" name="place" value="Nizhny">Стамбул
+    </p>
+
+    <p>Причина поездки в Турцию:
+        <input type="Checkbox" name="experience"  value="10" checked>Просто отдыхать
+        <input type="Checkbox"  name="experience"   value="20" checked>Найти работу
+        <input type="Checkbox" name="experience" value="30" checked>Переехать туда
+    </p>
+
+    <p>Знанение турецкого:
+        <select name="languages">
+            <OPTION value="Владею свободно">Владею свободно</OPTION>
+            <OPTION value="Читаю и перевожу со словарем">Понимаю, но не говорю</OPTION>
+            <OPTION value="Читаю и перевожу со словарем">Не знаю</OPTION>
+        </select>
+    </p>
+
+    <p> Интересующиеся вопросы:
+        <br>
+        <TEXTAREA cols=80 rows=4 name="textarea" >Ваш вопрос</TEXTAREA>
+    </p>
+
+    <p>Дата: <input type="date" name="user_date"  value='2024-11-06'></p>
+    <p>Пароль: <input type="Password" name="password" size=9  value="123"></p>
+
+    <p>Название файла: <input type="Техт" name="000_file_name" value="Ivanova_Maria.txt" size='30'></p>
+
+
+    <input type="hidden" name="function"  value="page">
+    <input type="hidden" name="page_id"  value="3">
+
+    <p>
+        <input type="Reset"  name="Reset"  value="Обновить">
+        <input type="Submit" name="submit"  value="Отправить">
+    </p>
+
+</form>
+</section>
+
+
+  <section class="information" id="information">
+    <h2>About You</h2>
+    <form id="ContactForm" action="https://script.google.com/macros/s/AKfycbzr8p-i8gnEPLx541MMN6yGIGo0OET35d_poFrKyDLr-NFUUnHnuqL-8nLpU2Ijtp62Wg/exec" method="POST">
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" required><br><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="group">Group:</label>
+        <input type="text" id="group" name="group" required><br><br>
+
+        <label for="phone">Mobile Phone:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="date">Date when the form was sent:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <input type="submit" value="Отправить сообщение">
+    </form>
+</section>
+
+
+
+
+<section class="attractions" id="attractions">
+  <div class="attractions">
+      <h1><p style="font-weight: bolder;">Attractions</p></h1><br><br>
+
+      <table background="/Users/mehbube/Downloads/HTML_CSS_WEBSITE/fonn.jpg">
+          <tr>
+              <th><p style="font-weight: bolder;">Photo</p></th>
+              <th><p style="font-weight: bolder;">Name</p></th>
+              <th><p style="font-weight: bolder;">Location</p></th>
+              <th><p style="font-weight: bolder;">Description</p></th>
+          </tr>
+          <tr>
+              <td><img src="/Users/mehbube/Downloads/HTML_CSS_WEBSITE/photo1.jpg" alt="" title=""></td>
+              <td class="topkapi Palace"><p style="font-weight: bolder;">Topkapi Palace</p></td>
+              <td class="istanbul"><p style="font-weight: bolder;">Istanbul</p></td>
+              <td class="ancient residence of the Turkish sultans"><p style="font-weight: bolder;">ancient residence of the Turkish sultans</p></td>
+          </tr>
+          <tr>
+              <td><img src="/Users/mehbube/Downloads/HTML_CSS_WEBSITE/photo2.jpg" alt="" title=""></td>
+              <td class="mausoleum of Anyt Kabir"><p style="font-weight: bolder;">Mausoleum of Anyt Kabir</p></td>
+              <td class="ankara"><p style="font-weight: bolder;">Ankara</p></td>
+              <td class="Monumental Mausoleum of Mustafa Kemal Ataturk"><p style="font-weight: bolder;">monumental Mausoleum of Mustafa Kemal Ataturk</p></td>
+          </tr>
+          <tr>
+              <td><img src="/Users/mehbube/Downloads/HTML_CSS_WEBSITE/photo3.jpg" alt="" title=""></td>
+              <td class="lycian rock tombs"><p style="font-weight: bolder;">Lycian rock tombs</p></td>
+              <td class="dalaman"><p style="font-weight: bolder;">Dalaman</p></td>
+              <td class="tombs that built by the inhabitants of the ancient city of Kaunos"><p style="font-weight: bolder;">tombs that built by the inhabitants of the ancient city of Kaunos</p></td>
+          </tr>
+      </table>
+  </div>
+</section>
+
+<section class="task" id="task"> 
+<title>Проверка размещения сцены</title>
+<form action="https://www.google.com/search?"  name="UserEnter" target="_blank"> 
+    <script>
+        function checkPlacement() {{
+            const S = parseFloat(document.getElementById("area").value);
+            const R = parseFloat(document.getElementById("radius").value);
+            const K = parseFloat(document.getElementById("passage").value);
+       
+            // Вычисляем сторону квадрата
+            const side = Math.sqrt(S);
+
+            // Проверяем, можно ли разместить сцену
+            const requiredSpace = 2 * K + 2 * R;
+
+            const result = requiredSpace <= side;
+            document.getElementById("result").innerText = result ? 
+                "Сцену можно разместить!" : 
+                "Сцену разместить нельзя.";
+        }}
+      
+    </script>
+
+    <h1>Проверка размещения круглой сцены</h1>
+    <label for="area">Площадь зала (S): </label>
+    <input type="number" id="area" required><br><br>
+
+    <label for="radius">Радиус сцены (R): </label>
+    <input type="number" id="radius" required><br><br>
+
+    <label for="passage">Минимальный проход (K): </label>
+    <input type="number" id="passage" required><br><br>
+
+    <button onclick="checkPlacement()">Проверить</button>
+    <button onclick="checkPlacement()">Отправить</button>
+    <p id="result"></p>
+  </form>
+</section>
+
+

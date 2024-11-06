@@ -1,0 +1,134 @@
+
+.home-img {
+    text-align: center;
+}
+
+.home-img IMG{
+    width: 15vw;
+    border-radius: 10px;
+}
+
+.small-img {
+    text-align: center;
+    }
+    
+.small-img IMG{
+    width: 10vw;
+    border-radius: 20px; 
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color:#DCDCDC;
+        text-align: center;
+    }
+
+     nav, footer {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .passport-container {
+        position: relative;
+        display: inline-block;
+    }
+    .passport-container img {
+        width: 600px;
+        height: auto;
+    }
+    .text {
+        position: absolute;
+        color: black;
+        font-size: 1.2em;
+    }
+    #issued {
+        top: 90px;
+        left: 170px;
+    }
+    #surname {
+        top: 468px;
+        left: 350px;
+    }
+    #name {
+        top: 530px;
+        left: 340px;
+    }
+    #father {
+        top: 565px;
+        left: 325px;
+    }
+    #gender {
+        top: 596px;
+        left: 234px;
+    }
+    #birthplace {
+        top: 630px;
+        left: 340px;
+    }
+    #photo {
+        position: absolute;
+        top: 494px;
+        left: 25px;
+        width: 168px;
+        height: auto;
+    }
+    .button-container {
+        margin-top: 20px;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: #C0C0C0;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.2em;
+    }
+
+   
+    section {
+        padding: 20px 40px;
+    }
+
+    ol {
+        font-size: 1em;
+        padding-left: 0px;
+        padding-right: 1000px;
+    }
+    ul {
+        font-size: 1em;
+        padding-left: 50px;
+        list-style-type: circle;
+    }
+
+
+
+
+    .table h1 {
+        font-size: 5rem;
+        font-weight: 100;
+        margin-top: 1.5rem;
+        line-height: 1;
+        text-align: center;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-size: cover;
+        background-position: center;
+    }
+    .background {
+        filter: saturate(50%);
+    }
+    th, td {
+        border: 2px solid #C0C0C0;
+        padding: 20px;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    table img {
+        width: 200px;
+        height: auto;
+    }
+    .norma, .date, .duration, .genre, .secondary-genre, .link, .musli {
+        width: 15%;
+    }
