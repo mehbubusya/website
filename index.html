@@ -136,44 +136,50 @@
   <h2>The form to contact me</h2>
 
 <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
-    <p>Фамилия: <input type="Text" name="last_name" size=20  value="Иванова"></p>
-    <p>Имя: <input type="Text" name="name" size=20  value="Мария"></p>
-    <p>Возраст: <input type="Number" name="age" size=20 value="18"></p>
-    <p>Город, который Вы рассматриваете:
-        <input type="Radio" name="place" value="Moscow">Анкара
-        <input type="Radio" name="place" value="Moscow" checked>Измир
-        <input type="Radio" name="place" value="Nizhny">Стамбул
-    </p>
+
+    <p>Для поисковика:<input type="hidden" name="q" value="search"></p>
+    <p>Имя: <input type="Text" name="name" size=30  value="Мария"></p><br><br>
+    <p>Фамилия: <input type="Text" name="last_name" size=30  value="Иванова"></p><br><br>
+    <p>Возраст: <input type="Number" name="age" size=30 value="20"></p><br><br>
+    <p>Город, который вы расматриваете:
+        <input type="Radio" name="place" value="Moscow">Стамбул
+        <input type="Radio" name="place" value="Zamkadie" checked >Анталья
+    </p><br><br>
 
     <p>Причина поездки в Турцию:
         <input type="Checkbox" name="experience"  value="10" checked>Просто отдыхать
-        <input type="Checkbox"  name="experience"   value="20" checked>Найти работу
+        <input type="Checkbox"  name="experience"   value="20">Найти работу
         <input type="Checkbox" name="experience" value="30" checked>Переехать туда
-    </p>
+    </p><br><br>
 
-    <p>Знанение турецкого:
-        <select name="languages">
-            <OPTION value="Владею свободно">Владею свободно</OPTION>
-            <OPTION value="Читаю и перевожу со словарем">Понимаю, но не говорю</OPTION>
-            <OPTION value="Читаю и перевожу со словарем">Не знаю</OPTION>
+    <p>Владение турецким языком
+        <select name="opinion">
+            <OPTION value="Свободно говорю">Свободно говорю</OPTION>
+            <OPTION value="Понимаю, но не говорю">Понимаю, но не говорю</OPTION>
+            <OPTION value="Не знаю">Не знаю</OPTION>
         </select>
-    </p>
+    </p><br><br>
 
-    <p> Интересующиеся вопросы:
+    <p> Напишите отзыв:
         <br>
-        <TEXTAREA cols=80 rows=4 name="textarea" >Ваш вопрос</TEXTAREA>
-    </p>
+        <TEXTAREA cols=70 rows=5 name="textarea" > ваш отзыв </TEXTAREA>
+    </p><br><br>
 
-    <p>Дата: <input type="date" name="user_date"  value='2024-11-06'></p>
-    <p>Пароль: <input type="Password" name="password" size=9  value="123"></p>
+    <p>Дата: <input type="date" name="user_date"  value='2024-11-06'></p><br><br>
+    <p>Пароль: <input type="Password" name="password" size=9  value="123"></p><br><br>
+    <p>Название файла: <input type="Техт" name="000_file_name" value="turkeylove.txt" size='30'></p><br><br>
 
-    <p>Название файла: <input type="Техт" name="000_file_name" value="Ivanova_Maria.txt" size='30'></p>
+    <input type="hidden" name="function" value="page">
+    <input type="hidden" name="page_id" value="3">
+            
+    <div class="send-button">
+        <p>
+        <input type="Reset"  name="Reset"  value="Обновить">
+        <input type="Submit" name="Submit"  value="Отправить">
+        </p><br><br>
+    </div>
 
-
-    <input type="hidden" name="function"  value="page">
-    <input type="hidden" name="page_id"  value="3">
-
-    <p>
+          <p>
         <input type="Reset"  name="Reset"  value="Обновить">
         <input type="Submit" name="submit"  value="Отправить">
     </p>
@@ -183,27 +189,27 @@
 
 
   <section class="information" id="information">
-    <h2>About You</h2>
-    <form id="ContactForm" action="https://www.google.com/search?" >
-        <label for="surname">Surname:</label>
-        <input type="text" id="surname" name="surname" required><br><br>
+   <form id="about you" action="https://www.google.com/search?">
+    <label for="surname">Фамилия:</label>
+    <input type="text" id="surname" name="surname" required><br><br>
 
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name" required><br><br>
 
-        <label for="group">Group:</label>
-        <input type="text" id="group" name="group" required><br><br>
+    <label for="group">Группа:</label>
+    <input type="text" id="group" name="group" required><br><br>
 
-        <label for="phone">Mobile Phone:</label>
-        <input type="tel" id="phone" name="phone" required><br><br>
+    <label for="phone">Мобильный телефон:</label>
+    <input type="tel" id="phone" name="phone" required><br><br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+    <label for="email">Электронная почта:</label>
+    <input type="email" id="email" name="email" required><br><br>
 
-        <label for="date">Date when the form was sent:</label>
-        <input type="date" id="date" name="date" required><br><br>
+    <label for="date">Дата:</label>
+    <input type="date" id="date" name="date" required><br><br>
 
-        <input type="submit" value="Отправить сообщение">
+    <input type="submit" value="Отправить"><br><br>
+
     </form>
 </section>
 
