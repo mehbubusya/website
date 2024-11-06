@@ -1,1 +1,1 @@
-https://mehbubusya.github.io/website/index.html
+https://mehbubusya.github.io/website/Index.html
